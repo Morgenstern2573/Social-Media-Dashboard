@@ -1,0 +1,146 @@
+body {
+  font-family: Inter, sans-serif;
+  background: linear-gradient(hsl(225, 100%, 98%) 30%, white 30%);
+  min-height: 100vh;
+  color: hsl(230, 17%, 14%);
+}
+
+.top {
+  padding: 30px 0;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: x-large;
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+h4 {
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+
+.level-box {
+  background-color: hsl(227, 47%, 96%);
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.level-box:hover {
+  cursor: pointer;
+  background-color: hsl(227, 28%, 91%);
+}
+
+p.media-tag {
+  margin: 30px 5px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+p.big-number {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+p.big-number-text {
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+.fb-border {
+  border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+.tw-border {
+  border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+.insta-border {
+  border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+.u-border {
+  border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+svg.iconify {
+  font-size: 29px;
+}
+
+.insta-icon {
+  background-image: linear-gradient(
+    to right,
+    #fdc468,
+    #ffa263,
+    #ff806c,
+    #f9607f,
+    #df4996
+  );
+  color: white;
+  border-radius: 5px;
+}
+
+.tag-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg.iconify.tw-icon {
+  color: hsl(203, 89%, 53%);
+}
+
+svg.iconify.fb-icon {
+  color: hsl(208, 92%, 53%);
+}
+
+svg.iconify.u-icon {
+  background-color: hsl(348, 97%, 39%);
+  border-radius: 50%;
+  color: white;
+  padding: 3px;
+  font-size: 32px;
+}
+
+.change-text {
+  font-size: smaller;
+}
+
+.up {
+  color: hsl(163, 72%, 41%);
+}
+
+.down {
+  color: hsl(356, 69%, 56%);
+}
+
+.up-icon,
+.down-icon {
+  font-size: initial !important;
+}
+
+p.mid-number {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.level-box-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 15px;
+}
+
+.sub-top {
+  padding-top: 0px !important;
+}
