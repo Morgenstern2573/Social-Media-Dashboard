@@ -1,12 +1,37 @@
+:root {
+  --background: linear-gradient(hsl(225, 100%, 98%) 30%, white 30%);
+  --colorMain: hsl(230, 17%, 14%);
+  --colorSub: hsl(228, 12%, 44%);
+  --cardBG: hsl(227, 47%, 96%);
+  --cardBGhover: hsl(227, 28%, 91%);
+  --toggle: linear-gradient(
+    to right,
+    #aeb3cb,
+    #84bee5,
+    #14cce6,
+    #00d7c4,
+    #3eda82
+  );
+  --toggleFill: white;
+}
+
 body {
   font-family: Inter, sans-serif;
-  background: linear-gradient(hsl(225, 100%, 98%) 30%, white 30%);
+  background: var(--background);
   min-height: 100vh;
-  color: hsl(230, 17%, 14%);
+  color: var(--colorMain);
 }
 
 .top {
   padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
 }
 
 h1 {
@@ -16,25 +41,25 @@ h1 {
 
 h3 {
   font-size: x-large;
-  color: hsl(228, 12%, 44%);
+  color: var(--colorSub);
   font-weight: 700;
   margin: 30px 0;
 }
 
 h4 {
   font-weight: 700;
-  color: hsl(228, 12%, 44%);
+  color: var(--colorSub);
 }
 
 .level-box {
-  background-color: hsl(227, 47%, 96%);
+  background-color: var(--cardBG);
   margin: 20px;
   border-radius: 5px;
 }
 
 .level-box:hover {
   cursor: pointer;
-  background-color: hsl(227, 28%, 91%);
+  background-color: var(--cardBGhover);
 }
 
 p.media-tag {
@@ -51,6 +76,7 @@ p.big-number {
 
 p.big-number-text {
   font-weight: 400;
+  color: var(--colorSub);
   letter-spacing: 5px;
   margin-bottom: 30px;
 }
@@ -143,4 +169,30 @@ p.mid-number {
 
 .sub-top {
   padding-top: 0px !important;
+}
+
+p.toggle-back {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background-color: black;
+  border-radius: 7px;
+  padding: 0px 2px;
+  background-image: var(--toggle);
+}
+
+span#toggle {
+  height: 20px;
+  width: 20px;
+  background-color: var(--toggleFill);
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #80808099;
+  position: relative;
+  transition: left 0.5s;
+  left: 1px;
+}
+
+span#toggle:hover {
+  cursor: pointer;
 }
